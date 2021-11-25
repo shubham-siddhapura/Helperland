@@ -93,7 +93,15 @@ h6{
     margin-left: -75px;
 }
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width:1026px) and (min-width:993px){
+    .heading{
+        width: 50%!important;
+    }
+
+    .nav-item{
+        padding: 0.5rem!important;
+    }
+
     #steps{
         margin-top: 8rem!important;
     }
@@ -118,6 +126,7 @@ h6{
 @media screen and (max-width:766px){
     .heading{
         margin-top: 4rem!important;
+        padding: 0;
     }
     #steps{
         margin-top: 4rem!important;
@@ -135,6 +144,11 @@ h6{
     #mylogo{
         width: 115px;
         height: 85px;
+    }
+    
+    #grouped{
+        margin: 0!important;
+        padding: 0!important;
     }
 }
 
