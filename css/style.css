@@ -1,5 +1,9 @@
-h1, h2, h3, h4,h5{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body{
     font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4,h5{
+    font-weight: bold;
     color: #4F4F4F;
 }
 
@@ -12,14 +16,11 @@ p{
 }
 
 .header{
-    background-image: url('../img/grp.jpg')!important;
-    /* height: 930px !important; */
-    /* width: 100% !important;
-    height: 100%!important; */
-    background-size: cover !important;
-    color: #ffffff!important;
-    padding: 1.1% 1.1%;    
+    background-image: url('../img/grp.jpg');
+    background-size:cover;
+    color: #ffffff;
 }
+
 nav a{
     color: #ffffff!important;
 }
@@ -30,23 +31,56 @@ nav a{
 
 #mylogo{
     width: 175px;
-    height: auto;
+    height: 130px;
+}
+
+/* ======================= banner heading ===================== */
+.heading h1{
+    
+    font-size: 50px;
+    line-height: 61px;
 }
 
 
 a{
-    text-decoration: none!important;
+    text-decoration: none;
 }
 
-.nav-padding{
-    padding-top:0.25em;
-    padding-bottom: 0.30em;
+/* ========================== nav bar =========================== */
+
+.nav-item a{
+    font-size: 17px;
+    line-height: 40px;
+    padding: 0px 25px;
+    margin: 0 6px;
 }
 
 .heading{
     margin-top: 7rem;
     margin-left: 0!important;
 }
+
+.darknav{
+    background-color: #757575;
+}
+
+.darknav #mylogo{
+    height: 2.5rem;
+}
+
+/* ========================== center-btn ========================== */
+.center-btn{
+    display: inline-block;
+    background-color: #0061729a;
+    color: #ffffff;
+    line-height: 54px;
+    border-radius: 54px;
+    border: 1px solid white;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
 
 .date{
     color: #A3A3A3;
@@ -93,6 +127,13 @@ h6{
     margin-left: -75px;
 }
 
+
+@media screen and (max-width: 1184px) {
+    .nav-item a{
+        padding: 0 15px;
+    }
+}
+
 @media screen and (max-width:1026px) and (min-width:993px){
     .heading{
         width: 50%!important;
@@ -121,12 +162,19 @@ h6{
     #grppara{
         margin-left: 0;
     }
+
+    .header{
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width:766px){
     .heading{
         margin-top: 4rem!important;
         padding: 0;
+    }
+    .heading{
+        background-size: cover;
     }
     #steps{
         margin-top: 4rem!important;
@@ -154,15 +202,34 @@ h6{
 
 /* ============================= FAQs ============================= */
 
+
+/* ---------------------header--------------------- */
 #faqnav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #757575;
     padding: 0!important;
     /* font-size: 0.7rem!important; */
 }
+#faqnav .nav-item{
+    margin: auto 0;
+}
+
+#faqnav .nav-item .rounded-pill{
+    border: 1px solid white;
+    font-size: 17px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin: auto 5px;
+
+}
+
 
 #logo-faq{
-    height: 2.5rem;
-    margin-top: 0px;
+    height: 54px;
+    margin: 6px 0 4px 15px;
 }
 
 .greenlink{
@@ -180,7 +247,159 @@ header hr{
     color: #CCCCCC!important;
 }
 
-.footerborder{
-    border-bottom: 1px solid #424242;
+/* ------------------- faq main ---------------- */
+#faq-main{
+    width: 946px;
+    color: #646464;
 }
 
+#faq-main .nav-link{
+    border-radius: 0;
+    background-color: #F6F6F6;
+}
+
+.faq-btns{
+    color: #646464;
+    margin:0 !important;
+    padding:0 !important;
+    line-height: 66px !important;
+    font-size: 17px !important;
+    border-bottom: 3px solid #1D7A8C!important;
+}
+
+#faq-main li .active{
+    color: white;
+    background-color: #1D7A8C;
+}
+
+.faq-qa{
+    margin: 40px 0 0;
+}
+
+.faq-qa b{
+    margin-left: 15px;
+}
+
+.faq-ans{
+    text-align: justify;
+    padding:20px 20px 0;
+    margin-left: 20px;
+}
+
+/* ------------------- news letter ------------------- */
+#news{
+    margin: 25px 0 55px;
+}
+
+#news h4{
+    font-size: 18px!important;
+    margin-bottom: 16px !important;
+}
+
+#news input{
+    font-size: 14px!important;
+}
+
+#news .email{
+    background-color: #F4F5F8!important;
+    border: 1px solid #565656!important;
+    padding-left: 22px!important;
+    line-height: 40px;
+    width: 233px;
+    margin-right: 11px;
+}
+
+#news .submit-btn{
+    background-color: #ff7b6d; 
+    color: #ffffff;
+    padding: 0 22px;
+    line-height: 40px;
+    border:0;
+}
+
+footer{
+    font-size: 14px;
+}
+
+#faq-footer-links a{
+    padding: 0 15px;
+    color: white;
+}
+
+.footerborder{
+    border-bottom: 1px solid #424242;
+   
+}
+#faq-footer{
+    margin: 0 120px;
+}
+
+
+
+
+@media screen and (max-width:1026px) {
+    #faqnav .nav-item .rounded-pill{
+        padding:12px;
+        line-height: 28px;
+    }
+    .nav-pills .nav-item{
+        padding: 0!important;
+    }
+    #faq-main{
+        width: 80%;
+        color: #646464;
+    }
+}
+@media screen and (max-width:992px){
+    #faq-nav{
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #faq-nav .nav-item{
+        margin: 10px;
+        text-align: center;
+        width: 50vw;
+    }
+    #faq-footer{
+        justify-content: center!important;
+    }
+    #faq-footer-links{
+        margin: 15px 0;       
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+    #faq-nav .nav-item{
+        max-width: 70vw;
+    }
+    #faqfooter{
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .footerborder{
+        justify-content: center!important;
+    }
+
+    #faq-footer-links a{
+        font-size: 14px;
+        width: 90vw;
+    }
+    #faq-footer-links{
+        margin: 15px;
+    }
+    #faq-main{
+        width: 90%;
+        color: #646464;
+    }
+}
+@media screen and (max-width:413px){
+    #faq-customer-btn{
+        line-height: 100px!important;
+    }
+    #faq_service_btn{
+        line-height: 50px!important;
+    }
+}
