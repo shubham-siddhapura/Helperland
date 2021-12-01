@@ -94,16 +94,16 @@ a{
     color: #525252;
     display: none;
     position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-size: 200%;
+    bottom: 30px;
+    left: 30px;
+    font-size: 48px;
 }
 
 #timer{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 200%;
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    font-size: 63px;
 }
 
 footer>.container a{
@@ -189,6 +189,12 @@ h6{
         width: 75%!important;
     }
 
+    #btn-back-to-top{
+        font-size: 36px;
+        bottom: 15px;
+        left: 15px;
+    }
+
     #mylogo{
         width: 115px;
         height: 85px;
@@ -218,7 +224,7 @@ h6{
 }
 
 #faqnav .nav-item .rounded-pill{
-    border: 1px solid white;
+    border: 1px solid #FFFFFF80;
     font-size: 17px;
     line-height: 40px;
     padding: 0 20px;
@@ -240,11 +246,17 @@ h6{
     width: 100%;
 }
 
-header hr{
+hr{
     display: inline-block;
-    width: 4rem;
-    height: 2px!important;
+    width: 62px;
+    height: 1px!important;
     color: #CCCCCC!important;
+}
+
+
+
+.separator{
+    margin: 0 9px;
 }
 
 /* ------------------- faq main ---------------- */
@@ -350,7 +362,7 @@ footer{
         color: #646464;
     }
 }
-@media screen and (max-width:992px){
+@media screen and (max-width:991px){
     #faq-nav{
         display: flex!important;
         flex-direction: column;
@@ -373,7 +385,7 @@ footer{
 @media screen and (max-width:767px) {
     
     #faq-nav .nav-item{
-        max-width: 70vw;
+        width: 50vw;
     }
     #faqfooter{
         margin: 0!important;
@@ -401,5 +413,268 @@ footer{
     }
     #faq_service_btn{
         line-height: 50px!important;
+    }
+    #faq-nav .nav-item{
+        width: 70vw;
+    }
+}
+
+/* ============================= Prices ============================= */
+.title{
+    font-size: 36px;
+    line-height: 43px;
+    color: #4F4F4F;
+    margin: 31px 0 9px;
+}
+/* ------------------------- prices main ------------------------ */
+#one-time{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 1px solid #B0C9CE;
+    width: 555px;
+    height: 304px;
+    margin: 42px auto 50px;
+}
+#one-time{
+    color: #646464;
+}
+
+
+#one-time-title{
+    width: 100%;
+}
+
+#one-time-title h2{
+    font-size: 28px;
+    line-height: 60px;
+    color: #FFFFFF!important;
+    background-color: #1D7A8C;
+    margin: 0;
+    padding: 0;    
+    text-align: center;
+}
+
+#hr-price{
+    margin: 18px 0 27px;
+}
+
+.onetime-desc{
+    margin-left: 9px;
+    font-size: 16px;
+}
+
+#extra{
+    border-top:1px solid #DCDCDC;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+#extra-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 56px;
+}
+.extra-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px;    
+}
+
+.extra-box p{
+    font-size: 16px;
+    color: #646464;
+    margin: 15px 0 6px;
+}
+
+.extra-box h5{
+    font-size: 18px;
+    color: #1D7A8C;
+    margin: 0;
+    padding: 0;
+}
+
+.extra-img{
+    width: 108px;
+    height: 108px;
+    border: 1px solid #B0C9CE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+/* -------------------------- What include section --------------------------- */
+#what-include{
+    padding-top: 73px;
+    background-color: #F6F6F6;
+}
+#what-include-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.what-boxes{
+    margin: 42px 15px 81px;
+    color: #4F4F4F;
+}
+.what-boxes h3{
+    font-size: 20px;
+    line-height: 24px;
+    margin: 20px 0 10px;
+}
+.box-desc{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.box-desc div{
+    margin: 7px 0;
+}
+
+/* ---------------------------- why helperland --------------------------- */
+#why-hl-main{
+    margin: 42px auto 70px;
+}
+
+#why-hl-main #left-side{
+    text-align: end;
+}
+
+#left-side p{
+    margin: 0 0 0 auto;
+}
+
+
+#why-hl-main h3{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 9.5px;
+    color: #646464;
+    width: 340px;
+    
+}
+
+#why-hl-main p{    
+    font-size: 14px;
+    color: #646464;
+    height: 84.67px;
+    width: 280.7px;
+    margin-bottom: 0;
+}
+
+#why-hl-main img{
+    margin: 0 auto;
+    width: 375px;
+    height: 241px;
+}
+
+#why-hl-main #why-img{
+    order: 2;
+}
+#why-hl-main #left-side{
+    order: 1;
+    margin:0 25px 0 15px;
+}
+#why-hl-main #right-side{
+    order: 3;
+    margin:0 15px 0 25px;
+}
+
+@media screen and (max-width:1145px) {
+    #why-hl-main #why-img{
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+    #why-hl-main #left-side{
+        order: 2;
+        margin:0 12px 0 15px;
+    }
+    #why-hl-main #right-side{
+        order: 3;
+        margin:0 15px 0 12px;
+    }
+    #extra{
+        width: 80%;
+    }
+    #what-include-box{
+        margin: 30px 0;
+    }
+    .what-boxes{
+        margin:10px 15px 40px;
+    }
+}
+
+
+@media screen and (max-width:734px) {
+
+    #extra{
+        width: 90%;
+    }
+    #why-hl-main #left-side{
+        margin:0 15px 0 15px;
+        text-align: center;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #why-hl-main #right-side{
+        margin:0 15px 0 15px;
+        text-align: center;
+        width: 80%;
+    }
+    
+    #why-hl-main p{    
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #why-hl-main h3{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 9.5px;
+        color: #646464;
+        width: 100%;
+        
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+
+    #one-time{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width:420px) {
+    .what-boxes{
+        width: 90%;
+    }
+    .what-boxes>img{
+        width: 100%;
+    }
+    
+    #why-hl-main img{
+        width: 90%;
+ 
+    }
+}
+
+@media screen and (max-width:340px) {
+    .submit-btn{
+        width: 233px;
+        margin-top: 10px;
+    }
+    #news .email{
+        margin: 0;
     }
 }
