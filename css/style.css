@@ -878,8 +878,11 @@ input{
     }    
 }
 
-
 /* ============================= Become a provider ================================= */
+
+.bgColorNav{
+    background-color: #525252;
+}
 
 #becomeProviderheader{
     background-image: url('../img/becomeProvider/become-a-pro-banner.png');
@@ -897,6 +900,7 @@ input{
     margin-left: auto;
     margin-right: auto;
     padding:20px 36px;
+    box-shadow: 0px 0px 16px #00000026;
 }
 
 #becomeProviderRegister h2{
@@ -976,6 +980,7 @@ input{
     align-items: center;
     width: 755px;
     margin: 0 auto;
+    z-index: 10;
 }
 
 #howIT h2{
@@ -1031,12 +1036,14 @@ input{
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: -1!important;
 }
 
 #howIT #howIT-bg-left{
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: -1!important;
 }
 
 #homenav{
