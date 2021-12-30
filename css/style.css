@@ -34,38 +34,53 @@ nav a{
     height: 130px;
 }
 
-/* ======================= banner heading ===================== */
-.heading h1{
-    
-    font-size: 50px;
-    line-height: 61px;
+#homenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0!important;
+    /* font-size: 0.7rem!important; */
+}
+#homenav .nav-item{
+    margin: auto 0;
+    font-size: 17px;
 }
 
+#homenav .nav-item .rounded-pill{
+    border: 1px solid #FFFFFF80;
+    font-size: 17px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin: auto 5px;
+
+}
+
+
+/* ======================= banner heading ===================== */
+.heading h1{
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
 
 a{
     text-decoration: none;
 }
 
-/* ========================== nav bar =========================== */
-
-.nav-item a{
-    font-size: 17px;
-    line-height: 40px;
-    padding: 0px 25px;
-    margin: 0 6px;
-}
-
 .heading{
-    margin-top: 7rem;
-    margin-left: 0!important;
+    padding: 318px 0 0 55px;
 }
 
-.darknav{
-    background-color: #757575;
+.heading p{
+    display: inline;
+    font-weight: 300;
 }
 
-.darknav #mylogo{
-    height: 2.5rem;
+.heading img{
+    width: 13px;
+    height: 9.99px;
 }
 
 /* ========================== center-btn ========================== */
@@ -78,7 +93,20 @@ a{
     border: 1px solid white;
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 18px;
-    padding: 0 30px;
+    padding: 0 31px;
+}
+#steps{
+    height: ;
+}
+#steps .text-center{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#steps p{
+    font-size: 20px;
 }
 
 
@@ -251,6 +279,7 @@ hr{
     width: 62px;
     height: 1px!important;
     color: #CCCCCC!important;
+    z-index: -1;
 }
 
 
@@ -677,4 +706,174 @@ footer{
     #news .email{
         margin: 0;
     }
+}
+
+/* =========================== Contact page ================================ */
+
+/* -----------------------details------------------------- */
+#details{
+    margin: 52px 0 56px;
+}
+
+.contact-details{
+    margin: 0 15px 20px;
+}
+
+.contact-img{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-desc{
+    text-align: center;
+}
+.contact-desc p{
+    margin: 0;
+    color: #4F4F4F;
+    font-size: 16px;
+}
+.hrtag{
+    text-align: center;
+   
+}
+.hrtag hr{
+    z-index: -1;
+}
+.contact-divider{
+    width: 73%;
+    min-width: 300px;   
+}
+
+/* ----------------------------form--------------------------- */
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+#form-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    border: 1px solid #C8C8C8;
+    margin: 0;
+}
+
+#fname, #lname{
+    width: 300px;
+    padding: 0 15px;
+    line-height: 46px;
+    margin: 23px 7.5px 7.5px;
+    font-size: 16px;
+}
+#email{
+    width: 300px;
+    padding: 0 15px;
+    line-height: 46px;
+    margin: 7.5px 7.5px;
+    font-size: 16px;
+}
+
+#countrycode{
+    width: 57px;
+    padding: 13px 15px;
+    height: 46px;
+    border: 1px solid #C8C8C8;
+    background-color: #F3F3F3;
+    margin-left: 7.5px;
+}
+
+#mobile{
+    width: 243px;
+    padding:0 15px;
+    line-height: 46px;
+    margin:7.5px 7.5px 7.5px 0;
+    font-size: 16px;
+}
+
+#subject{
+    width: 617px;
+    margin: 7.5px;
+    padding: 14px 15px;
+    line-height: 46px;
+    border: 1px solid #c8c8c8;
+}
+
+#contact-btn{
+    padding: 0 50px;
+    line-height: 46px;
+    background-color: #1D7A8C;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 46px;
+    font-weight: 500;
+    margin-top: 7.5px;
+}
+#contact-btn:hover{
+    border: 2px solid #1D7A8C;
+    background-color: white;
+    color: #1D7A8C;
+    line-height: 42px;
+}
+
+#contact-form textarea{
+    width: 617px;
+    margin: 7.5px;
+    padding: 14px 15px;
+    height: 146px;
+    border: 1px solid #c8c8c8;
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+}
+
+#contact-news{
+    margin-top: 43px;
+}
+
+@media screen and (max-width:650px) {
+    #form-elements div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #fname, #lname, #email{
+        width: 90%;
+        margin: 7.5px auto;
+    }
+    #mobile{
+        width: calc(90% - 57px);
+    }
+    #subject{
+        width:90%;
+    }
+    #contact-form textarea{
+        width: 90%;
+    }
+}
+
+/* ============================== About page ================================ */
+.about-sections .paragraph{
+    margin: 35px 0;
+}
+.about-sections p{
+    width: 991.7px;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #646464;
+}
+
+@media screen and (max-width:1050px) {
+    .about-sections p{
+        width: 85%;
+    }    
 }
