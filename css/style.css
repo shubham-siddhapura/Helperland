@@ -243,7 +243,7 @@ h6{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #757575;
+    background-color: #525252;
     padding: 0!important;
     /* font-size: 0.7rem!important; */
 }
@@ -1161,4 +1161,175 @@ input{
 
 .collapse.show{
     background-color: #525252;
+}
+
+
+/* ============================== Upcoming Service ================================= */
+.upcomingService .nav-padding{
+    margin:0 12px!important;
+}
+
+#upcoming-notification{
+    border: 1px solid #E1E1E1;
+    border-top: 0;
+    border-bottom: 0;
+    
+}
+.upcoming-notify{
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+#notification-dot{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 3px 7px;
+  border-radius: 50%;
+  background: #FF1616;
+  color: white;
+  font-size: 12px;
+}
+
+.upcomingService .dropdown{
+    margin-left: 10px!important;
+}
+
+.upcomingService .dropdown-item{
+    color: #000000!important;
+}
+
+#upcoming-header{
+    padding-top: 39px;
+    padding-bottom: 43px;
+    background-color: #F9F9F9;
+}
+
+#upcoming-header h1{
+    text-align: center;
+    line-height: 37px;
+    font-size: 30px;
+}
+
+#upcoming-header h1 span{
+    font-weight: 400;
+}
+
+#upcoming-menu-desktop{
+    background-color: #1D7A8C;
+    margin: 0px 15px;
+}
+
+#upcoming-menu-desktop ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: #1D7A8C;
+    width: 261px;
+}
+
+#upcoming-menu-desktop ul li{
+    font-size: 18px;
+    padding: 15px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #488e9c;
+}
+
+#upcoming-menu-desktop ul .active{
+    background-color: #146371;
+}
+
+#upcoming-desktop-flex{
+    display: flex;
+    justify-content: center; 
+    margin: 30px 0;  
+}
+
+#upcoming-table {
+    margin: 0px 15px;
+    overflow: scroll;
+}
+
+#upcoming-table table{
+    font-size: 16px;
+    border: 1px solid #e1e1e1;
+    min-width: 740px;
+}
+
+#upcoming-table tr{
+    color: #646464;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#upcoming-table td, #upcoming-table th{
+    padding: 10px 22px;
+}
+
+#upcoming-table th{
+    background-color: #F9F9F9;
+    margin: 0;
+}
+
+#upcoming-table tbody a{
+    color: #ffffff;
+    background-color: #FF6B6B;
+    border-radius: 20px;
+    padding:7px 16px;
+}
+
+#upcoming-table tbody .distance, #upcoming-table tbody .actions{
+    text-align: center;
+}
+
+#upcoming-menu-collapse{
+    display: none;
+}
+
+#notification-user{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:1140px) {
+    #upcoming-menu-desktop ul{
+        width: 210px;
+    }
+
+    #upcoming-table td, #upcoming-table th{
+        padding: 10px 15px;
+    }
+
+    #upcoming-menu-desktop{
+        margin:0 7.5px 0 15px;
+    }
+    #upcoming-table{
+        margin: 0 15px 0 7.5px;
+    }
+    #upcoming-table th{
+        margin: 10px 10px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    #upcoming-menu-desktop{
+        display:none;
+    }
+    #upcoming-menu-collapse{
+        display: block;
+        border-bottom:1px solid #ffffff55;
+    }
+    #upcoming-notification{
+        border: 0;
+    }
+    #notification-dot{
+        top:-7px;
+        right: -7px;
+    }
+    #upcomingUser{
+        margin-bottom: 15px!important;
+    }
+
 }
